@@ -1,12 +1,4 @@
-""" My reference is
-    Introduction to Computer Science
-    Using Python and Pygame
-                by
-    Paul Vincent Craven
-                and
-    http://www.pygame.org/docs/
-
-    my blog 'http://manachanok94.blogspot.com'"""
+""" Calculator using pygame """
 
 import pygame
 from pygame.locals import *
@@ -84,8 +76,6 @@ def Calculator():
     textlist = ['(', ')', 'del', 'C', '7', '8', '9', '/', '4', '5', '6', '*',
                 '1', '2', '3', '-', '.', '0', '=', '+']
 
-    pygame.mixer.music.load("C:/Users/Asus/PycharmProjects/Calculator/Beep1.mp3")
-
     O = Function()
 
     state = False
@@ -144,7 +134,6 @@ def Calculator():
                 column_click = pos[0] // (bwidth + margin)
                 row_click = pos[1] // (bheight + margin)
                 grid[row_click][column_click] = 1
-                pygame.mixer.music.play()
                 if grid[row_click][column_click] == grid[2][0]:
                     O.push('(')
                 if grid[row_click][column_click] == grid[2][1]:
@@ -196,7 +185,6 @@ def Calculator():
                     O.push('+')
 
             elif event.type == pygame.KEYDOWN:  # Get variable by push the keypad
-                pygame.mixer.music.play()
                 if event.key == pygame.K_LEFTPAREN:
                     O.push('(')
                 if event.key == pygame.K_RIGHTPAREN:
