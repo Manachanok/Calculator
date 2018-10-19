@@ -5,3 +5,4 @@ My blog :: https://manachanok94.blogspot.com/
 My reference :: Introduction to Computer Science Using Python and Pygame by Paul Vincent Craven
                 http://www.pygame.org/docs/
                 https://pysimplegui.readthedocs.io/en/latest/cookbook/#keypad-touchscreen-entry-input-element-update
+                https://youtu.be/Ggy8IuIQEsA(Java-GUI)
